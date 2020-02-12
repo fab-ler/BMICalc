@@ -56,7 +56,7 @@ public class NegativeInvalidInput {
         browser.quit();
     }
 
-    // заполнение поля вес бувенными символами (ввод невалидных симолов)
+    // заполнение поля вес бувенными символами (ввод невалидных симолов) 
     @Test
     public void InvalidWeightInput() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
