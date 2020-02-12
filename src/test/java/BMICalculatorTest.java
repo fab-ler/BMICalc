@@ -2,11 +2,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
 public class BMICalculatorTest {
+
 
    @Test
     public void categoryTestNormal () {
@@ -34,6 +38,7 @@ public class BMICalculatorTest {
         browser.quit();
     }
 
+
     @Test
     public void categoryTestStarvation () {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
@@ -48,7 +53,7 @@ public class BMICalculatorTest {
     }
     @Test
     public void categoryTest() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
 
         WebDriver browser = new ChromeDriver();
         browser.get("https://healthunify.com/bmicalculator/");
@@ -63,5 +68,7 @@ public class BMICalculatorTest {
         browser.quit();
 
     }
+
+
 }
 
